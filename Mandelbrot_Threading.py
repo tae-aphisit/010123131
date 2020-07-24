@@ -5,6 +5,7 @@ import pygame
 
 print( 'File:', __file__ )
 
+# function mandelbrot set
 def mandelbrot(c,max_iters=100):
     i = 0
     z = complex(0,0)
@@ -16,7 +17,7 @@ def mandelbrot(c,max_iters=100):
 # initialize pygame
 pygame.init()
 
-# create a screen of width=600 and height=400
+# create a screen of width=500 and height=500
 scr_w, scr_h = 500, 500
 screen = pygame.display.set_mode( (scr_w, scr_h) )
 
@@ -29,6 +30,7 @@ surface = pygame.Surface( screen.get_size(), pygame.SRCALPHA )
 # half width, half screen
 w2, h2 = scr_w/2, scr_h/2 
 
+# function draw mandelbrot
 def Thread_mandelbrot(draw,surface):
     scale = 0.006
     offset = complex(-0.55,0.0)
