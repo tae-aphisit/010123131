@@ -61,6 +61,7 @@ for t in list_threads:
     t.start()
 
 running = True
+# pygame loop
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -68,4 +69,3 @@ while running:
 
 pygame.quit()
 print( 'PyGame done...')
-################################################################
