@@ -1,7 +1,7 @@
+# 6201012620252
+# อภิสิทธิ์ ผากงคำ
 import threading
-import cmath
 import pygame
-from random import randint, randrange, random
 
 print( 'File:', __file__ )
 
